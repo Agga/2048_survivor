@@ -8,8 +8,8 @@
     <title>2048 Survivor</title>
     
 <script type="module">
-import init, * as bindings from './survivor_2048-182a03035d834df9.js';
-const wasm = await init({ module_or_path: './survivor_2048-f6a9e5723d43e0bf_bg.wasm' });
+import init, * as bindings from './survivor_2048-33b0687c138adf95.js';
+const wasm = await init({ module_or_path: './survivor_2048-4c7a0918d59af22e_bg.wasm' });
 
 
 window.wasmBindings = bindings;
@@ -43,7 +43,7 @@ dispatchEvent(new CustomEvent("TrunkApplicationStarted", {detail: {wasm}}));
             pointer-events: none;
         }
     </style>
-<link rel="modulepreload" href="./survivor_2048-182a03035d834df9.js" crossorigin="anonymous" integrity="sha384-koimVhsjYJzMPceehLRu7t2UQgphSLIFD7T07iQEiB9PwVydnjRUnm092e/niEvG"><link rel="preload" href="./survivor_2048-f6a9e5723d43e0bf_bg.wasm" crossorigin="anonymous" integrity="sha384-PKi7YiE/JqmzLEYigOLvDSb1rjPXARsD/Ruby6wnYJm02kNY0qVbRJXfhyGlk245" as="fetch" type="application/wasm"></head>
+<link rel="modulepreload" href="./survivor_2048-33b0687c138adf95.js" crossorigin="anonymous" integrity="sha384-nkUR7spBKqo7lkluYdIMmwRmOX/dh5rNXcvJnXDvUJGGwGeQz+6/N5NieWB3Wvpb"><link rel="preload" href="./survivor_2048-4c7a0918d59af22e_bg.wasm" crossorigin="anonymous" integrity="sha384-RwCGGg9F4yMxL4i5/wF2lS6ClcSlKb0/eUziV2Iz+6FvNZiiCVFM1lvEgTjz6xyM" as="fetch" type="application/wasm"></head>
 <body>
     <div id="loading">Loading 2048 Survivor...</div>
     <canvas id="game" tabindex="0"></canvas>
